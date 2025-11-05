@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
-.card-work .card-image {
+.card-work .card-image img {
     height: 30rem;
     width: 100%;
     object-fit: cover;
@@ -72,26 +72,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-work .card-inner {
+    position: absolute;
+    top: -0.1rem;
+    left: -0.1rem;
+    right: -0.1rem;
+    z-index: 1;
+}
+
+.card-work:hover .card-inner {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .card-work .card-title {
     text-align: center;
     margin: 0;
-    opacity: 10%;
+    opacity: 0;
     height: 100%;
     position: relative;
 }
 
-a::after .card-work .card-title {
+.card-work .card-title a {
+    display: block;
+    text-decoration: none;
+    padding-top: 45%;
+}
+
+.card-work .card-title a::after {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+    content: "";
 }
 
-.card-title card-work:hover {
+.card-work:hover .card-title {
     opacity: 1;
 }
 
