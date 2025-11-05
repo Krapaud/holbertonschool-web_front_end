@@ -6,7 +6,7 @@ body {
     color: #161616;
 }
 
-.anchor {
+a {
     color: #161616;
 }
 
@@ -15,9 +15,9 @@ body {
 }
 
 .card-category {
-    color: #D73953
+    color: #D73953;
 }
 
 .section-tagline {
-    color: #D73953
+    color: #D73953;
 }
